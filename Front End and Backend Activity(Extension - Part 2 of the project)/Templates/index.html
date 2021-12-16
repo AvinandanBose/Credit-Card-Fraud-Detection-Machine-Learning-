@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Credit Card Fraud Detection</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='form.js') }}"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center" style="background: blue;">
+      <h1>
+        <span class="badge badge-danger">Credit Card Fraud Detection</span>
+      </h1>
+    </div>
+
+    <div class="col-lg-12 well">
+      <div class="row">
+        <form style="background: pink;">
+          <div class="form-group">
+            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+              <div class="row">
+                <div class="col-md-5 col-sm-1 col-xs-2 form-group">
+                  <label for="TimeInput">
+                    <h3> <span class="badge badge-success">Time</span></h3>
+                  </label>
+                  <input type="text" class="form-control" size="200px" id="timeInput" class="form-control"
+                    placeholder="Time">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-5 col-sm-2 col-xs-2 form-group">
+                  <label for="AmountIntput">
+                    <h3> <span class="badge badge-success">Amount</span></h3>
+                  </label>
+                  <input type="text" class="form-control" size="200px" id="amountInput" placeholder="Amount"
+                    class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 form-group ">
+                  <div class="text-left">
+                    <button type="reset" class="btn btn-primary">CLEAR</button>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                    <span class="output-title" id="result"></span>
+                  </div>
+                </div>
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>
